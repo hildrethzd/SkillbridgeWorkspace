@@ -1,0 +1,20 @@
+package com.skillstorm;
+
+public class VotingTest {
+
+	public static void main(String[] args) {
+		Voting v = new Voting();
+		v.vote(19);
+
+	}
+
+}
+
+class Voting{
+	public void vote(int age) {
+		if (age < 18) {
+			throw new AgeRequirementException();
+			//System.out.println("Less than 18");
+		} else System.out.println("Requirements met");
+	}
+}

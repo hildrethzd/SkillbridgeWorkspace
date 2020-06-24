@@ -1,0 +1,26 @@
+package com.skillstorm;
+
+public class ConstructorExample {
+
+	public static void main(String[] args) {
+		Child child = new Child();
+		child.printName();
+
+	}
+
+}
+
+class Parent {
+	String lastName;
+	
+	public void printName() {
+		System.out.println("Last Name: " + lastName);
+	}
+}
+
+class Child extends Parent{
+	
+	public Child (String ln) {
+		lastName = ln;
+	}
+}

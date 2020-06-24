@@ -1,0 +1,11 @@
+package com.skillstorm.threads;
+
+public class RunnableAnonymous {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package com.skillstorm.threads;
+
+public class DeadLock {
+	
+	public static Object Lock1 = new Object();
+	public static Object Lock2 = new Object();
+
+	public static void main(String[] args) {
+
+	}
+	
+	private static class ThreadDemo extends Thread {
+		public void run() {
+			System.out.println("Thread 1: Holding lock 1");
+		}
+	}
+
+}

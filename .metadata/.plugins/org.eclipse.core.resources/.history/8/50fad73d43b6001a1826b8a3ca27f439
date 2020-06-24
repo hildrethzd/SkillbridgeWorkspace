@@ -1,0 +1,16 @@
+package com.skillstorm.threads;
+
+public class ThreadExample extends Thread{
+
+	public void run() {
+		System.out.println("Inside Run Method: " + Thread.currentThread().getName());
+	}
+	
+	public static void main(String[] args) {
+		
+		Thread thread = new ThreadExample();
+		thread.start();
+		
+	}
+
+}

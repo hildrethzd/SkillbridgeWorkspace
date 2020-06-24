@@ -1,0 +1,44 @@
+package com.skillstorm;
+
+public class LoopExample {
+
+	public static void main(String[] args) {		
+		LoopExample lp = new LoopExample();
+		lp.dowhile();
+		lp.switches("A");
+	}
+	
+	
+	public void dowhile() {
+		System.out.println("************ DOWHILE *****************");
+		
+		int x = 5;
+		
+		while (x <= 5) {
+			System.out.println(" While: " + x++);
+		}	
+		
+		do {
+			System.out.println(" Do: " + x);
+		} while (x < 5);
+	}
+	
+	public void switches(String choice) {
+		System.out.println("************ SWITCHES *****************");
+		switch(choice) {
+		case "A": {
+			System.out.println("A");
+		}
+		case "B": {
+			System.out.println("B");
+			break;
+		}
+		default: {
+			System.out.println("C");
+		}
+		}
+		
+		
+	}
+
+}

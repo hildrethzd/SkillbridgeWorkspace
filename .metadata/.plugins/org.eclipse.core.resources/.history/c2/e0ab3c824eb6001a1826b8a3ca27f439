@@ -1,0 +1,22 @@
+package com.skillstorm.threads;
+
+public class LostUpdate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class BankAccount {
+	int balance =0;
+	
+	public void deposit(int funds) {
+		balance += funds;
+	}
+	
+	public void withdraw(int funds) {
+		balance -= funds;
+	}
+}

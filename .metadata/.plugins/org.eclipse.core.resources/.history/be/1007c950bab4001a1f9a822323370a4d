@@ -1,0 +1,35 @@
+package com.skillstorm;
+
+public class EqualObjects {
+
+	public static void main(String[] args) {
+		
+		boolean result = false;
+		Salad chickenSalad = new Salad("Chicken Salad", "Chicken", 300);
+		Salad chickenSalad2 = new Salad("Chicken Salad", "Chicken", 300);
+		
+		result = chickenSalad.equals(chickenSalad2);
+		System.out.println(chickenSalad.hashCode());
+		System.out.println(chickenSalad2.hashCode());
+	}
+
+}
+
+class Salad {
+	String name;
+	String protein;
+	int calories;
+	public Salad() {
+		super();
+	}
+	
+	public Salad(String name, String protein, int calories) {
+		super();
+		this.name = name;
+		this.protein = protein;
+		this.calories = calories;
+	}
+	
+	
+	
+}

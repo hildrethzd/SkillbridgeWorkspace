@@ -1,0 +1,39 @@
+package com.skillstorm.threads;
+
+import java.util.Random;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
+public class ProducerConsumer {
+
+	private static BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(2);
+	public static void main(String[] args) {
+
+		Thread producer = new Thread(() ->  {
+			while(true) {
+				Random r = new Random();
+				int x  = r.nextInt();
+				try {
+					queue.put(x);
+					System.out.println("Put: " + x + " PUT queue size" + queue.size());
+				}catch(InterruptedException i) {}
+			}
+		});
+		
+		Thread consumer = new Thread(()-> {
+			while(true) {
+				try {
+					Thread.sleep(1000);
+					System.out.println("Take: "+ queue.take() + " TAKE queue size: " + queue.size());
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		});
+		
+		producer.start();
+		consumer.start();
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.skillstorm;
+
+public class LoopExample {
+
+	public static void main(String[] args) {		
+		LoopExample lp = new LoopExample();
+		lp.dowhile();
+	}
+	
+	
+	public void dowhile() {
+		System.out.println("************ DOWHILE *****************");
+		
+		int x = 5;
+		
+		while (x < 5) {
+			System.out.println(" While: " + x);
+		}	
+		
+		do {
+			System.out.println(" Do: " + x);
+		} while (x < 5);
+		
+		
+		
+	}
+
+}

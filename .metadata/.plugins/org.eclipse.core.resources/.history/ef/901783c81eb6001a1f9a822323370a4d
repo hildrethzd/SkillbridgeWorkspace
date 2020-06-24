@@ -1,0 +1,31 @@
+package com.skillstorm.nestedClasses;
+
+public class InnerClassesExample {
+	public static void main(String[] args) {
+		Computer comp = new Computer();
+		comp.printCompInfo();
+		
+		Computer.Screen screen = comp.new Screen();
+		screen.printScreenInfo();
+		
+	}
+
+}
+
+class Computer {
+	private int year = 2020;
+	
+	public void printCompInfo() {
+		System.out.println("Year from OUTER: "+ year);
+	}
+	
+	class Screen {
+		public void printScreenInfo() {
+			System.out.println("Year from INNER: "+ year);
+		}
+	}
+
+
+
+}
+

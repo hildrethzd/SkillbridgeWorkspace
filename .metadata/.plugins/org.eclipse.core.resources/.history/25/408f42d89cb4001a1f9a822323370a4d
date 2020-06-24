@@ -1,0 +1,16 @@
+package com.skillstorm;
+
+public class Variables {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+
+}
+
+class Variable {
+	public static int year;
+	private int age;
+	public String name;
+	
+}

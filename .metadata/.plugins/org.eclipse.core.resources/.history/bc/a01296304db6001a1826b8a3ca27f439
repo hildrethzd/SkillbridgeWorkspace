@@ -1,0 +1,13 @@
+package com.skillstorm.threads;
+
+public class DeadLock {
+	
+	public static Object Lock1 = new Object();
+	public static Object Lock2 = new Object();
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

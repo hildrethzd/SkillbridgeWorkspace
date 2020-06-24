@@ -1,0 +1,25 @@
+package com.skillstorm;
+
+public class VotingTest {
+
+	public static void main(String[] args){
+		Voting v = new Voting();
+		try {
+			v.vote(17);
+		} catch (AgeRequirementException e) {
+			System.out.println("WE got problems");
+			//e.printStackTrace();
+		}
+
+	}
+
+}
+
+class Voting{
+	public void vote(int age) throws AgeRequirementException {
+		if (age < 18) {
+			throw new AgeRequirementException();
+			//System.out.println("Less than 18");
+		} else System.out.println("Requirements met");
+	}
+}

@@ -1,0 +1,28 @@
+package com.skillstorm;
+
+public class EqualObjects {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
+
+class Salad {
+	String name;
+	String protein;
+	int calories;
+	public Salad() {
+		super();
+	}
+	
+	public Salad(String name, String protein, int calories) {
+		super();
+		this.name = name;
+		this.protein = protein;
+		this.calories = calories;
+	}
+	
+	
+	
+}
